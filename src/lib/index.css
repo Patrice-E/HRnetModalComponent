@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+dialog footer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+dialog footer button {
+  color: red;
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+dialog footer .confirm {
+  background-color: dodgerblue;
+  color: #fff;
+}

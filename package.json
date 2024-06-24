@@ -1,0 +1,55 @@
+{
+  "name": "@epatrice/hrnetmodalcomponent",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A reusable modal component",
+  "license": "MIT",
+  "author": "Patrice Eydaleine",
+  "keywords": [
+    "react",
+    "modal",
+    "component",
+    "typescript"
+  ],
+  "files": [
+    "/dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}
