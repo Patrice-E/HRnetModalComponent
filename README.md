@@ -40,7 +40,7 @@ export default MyComponent() {
   const [content, setContent] = useState('')
 
 ...
-  <Modal isOpen={true or false} onConfirm={() => {}} onCancel={() => {}}>
+  <Modal isOpen={open} onConfirm={() => {}} onCancel={() => {}}>
     {content}
   </Modal>
 ...
@@ -92,7 +92,7 @@ export default MyComponent() {
   }
   const onCancel = () => {
     // Some other stuff to do when user cancels
-    setOpenModal(false)
+    setOpen(false)
   }
 
   return (
